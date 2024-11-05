@@ -40,8 +40,8 @@ h6 {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
-  bottom: 15px;
+  right: 90px;
+  bottom: 25px;
   z-index: 996;
   background: #149ddd;
   width: 40px;
@@ -51,7 +51,7 @@ h6 {
 }
 
 .back-to-top i {
-  font-size: 28px;
+  font-size: 45px;
   color: #fff;
   line-height: 0;
 }
