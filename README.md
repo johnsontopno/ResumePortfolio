@@ -2,5 +2,6 @@
 Portfolio
 Screen record how it work in live 
 
-https://github.com/johnsontopno/ResumePortfolio/assets/66691981/b712a590-c359-4788-848c-ee75d24e548c
+
+https://github.com/user-attachments/assets/1ffbb4e9-9d4e-40b8-89f9-9ab0e311c874
 
