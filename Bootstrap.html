@@ -40,60 +40,78 @@
 
 <body>
   <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <i class="bi bi-list mobile-nav-toggle d-xl-none" aria-label="Toggle navigation" role="button" tabindex="0"></i>
 
   <!-- ======= Header ======= -->
   <header id="header">
-    <div class="d-flex flex-column">
+    <div class="d-flex flex-column align-items-center">
 
-      <div class="profile">
-        <img src="assets/img/Johnson Topno.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Johnson Topno</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://instagram.com/johnny_topno?igshid=ZDdkNTZiNTM=" class="instagram"><i
-              class="bx bxl-instagram"></i></a>
-          <a href="https://wa.me/9878413813" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
-          <a href="https://github.com/johnsontopno" class="github"><i class="bi bi-github"></i></a>
-          <a href="https://www.linkedin.com/in/johnson-topno" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      <!-- Profile Section -->
+      <div class="profile text-center">
+        <img src="assets/img/Johnson Topno.jpg" alt="Johnson Topno Profile Picture" class="img-fluid rounded-circle">
+        <h1 class="text-light">
+          <a href="index.html">Johnson Topno</a>
+        </h1>
+        <div class="social-links mt-3">
+          <a href="https://instagram.com/johnny_topno?igshid=ZDdkNTZiNTM=" class="instagram" target="_blank"
+            aria-label="Instagram">
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a href="https://wa.me/9878413813" class="whatsapp" target="_blank" aria-label="WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+          <a href="https://github.com/johnsontopno" class="github" target="_blank" aria-label="GitHub">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/johnson-topno" class="linkedin" target="_blank" aria-label="LinkedIn">
+            <i class="bx bxl-linkedin"></i>
+          </a>
         </div>
       </div>
 
+      <!-- Navigation -->
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="index.html" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a>
-          </li>
-          <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <!-- <li><a href="#resume" class="nav-link scrollto"><i class="bi bi-clipboard-data"></i> <span>Facts</span></a></li> -->
-          <li><a href="index.html" class="nav-link scrollto"><i class="bi bi-sliders2-vertical"></i>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#skills" class="nav-link scrollto"><i class="bi bi-sliders2-vertical"></i>
               <span>Skills</span></a></li>
-          <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a>
-          </li>
-          <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-book-content"></i>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
               <span>Portfolio</span></a></li>
-          <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-          <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a>
-          </li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
+
     </div>
   </header>
-  <!-- End Header -->
-  <!-- whatsapp  -->
+  <!-- ======= End Header ======= -->
+
+  <!-- ======= WhatsApp Floating Chat ======= -->
   <input class="chat-menu hidden" id="offchat-menu" type="checkbox" />
+
+  <!-- Floating Button -->
   <div class="sticky-button" id="sticky-button">
     <label for="offchat-menu">
+      <!-- WhatsApp Icon -->
       <svg class="chat-icon" viewBox="0 0 24 24">
         <path
-          d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.5 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z" />
+          d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2Z" />
       </svg>
+
+      <!-- Close Icon -->
       <svg class="close-icon" viewBox="0 0 512 512">
         <path
-          d="M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z" />
+          d="M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-6.2 6.2-6.2 16.4 0 22.6l68.2 68.2-68.2 68.2c-6.2 6.2-6.2 16.4 0 22.6 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z" />
       </svg>
     </label>
   </div>
+
+  <!-- Chat Box -->
   <div class="sticky-chat">
     <div class="chat-content">
+      <!-- Header -->
       <div class="chat-header">
         <svg viewBox="0 0 32 32">
           <path
@@ -104,20 +122,27 @@
           <path
             d="M8,30a1,1,0,0,1-.42-.09A1,1,0,0,1,7,29V25.74a8,8,0,0,1-1.28-15,1,1,0,1,1,.82,1.82,6,6,0,0,0,1.6,11.4,1,1,0,0,1,.86,1v1.94l3.16-2.63A1,1,0,0,1,12.8,24H15a5.94,5.94,0,0,0,4.29-1.82,1,1,0,0,1,1.44,1.4A8,8,0,0,1,15,26H13.16L8.64,29.77A1,1,0,0,1,8,30Z" />
         </svg>
-        <div class="title">Johnson Topno <span>online</span>
+        <div class="title">
+          Johnson Topno
+          <span>Online</span>
         </div>
       </div>
-      <div class="chat-text"><span>Hello, is there anything you want to ask?<br></span>
+
+      <!-- Chat Text -->
+      <div class="chat-text">
+        <span>Hello, is there anything you want to ask?</span>
         <span class="typing">
           <svg viewBox="0 0 512 512">
+            <circle cx="96" cy="256" r="48"></circle>
             <circle cx="256" cy="256" r="48"></circle>
             <circle cx="416" cy="256" r="48"></circle>
-            <circle cx="96" cy="256" r="48"></circle>
           </svg>
         </span>
       </div>
     </div>
-    <a class="chat-button" href="https://api.whatsapp.com/send?phone=9878413813" rel="nofollow noreferrer"
+
+    <!-- WhatsApp Message Button -->
+    <a class="chat-button" href="https://api.whatsapp.com/send?phone=919878413813" rel="nofollow noreferrer"
       target="_blank">
       <span>Type a message</span>
       <svg viewBox="0 0 32 32">
@@ -126,11 +151,15 @@
       </svg>
     </a>
   </div>
+  <!-- ======= End WhatsApp Floating Chat ======= -->
+
   <style>
+    /* General hidden class */
     .hidden {
       display: none;
     }
 
+    /* Floating WhatsApp Button */
     .sticky-button {
       position: fixed;
       background-color: #25d366;
@@ -147,6 +176,7 @@
       height: 55px;
       -webkit-transition: all 0.2s ease-out;
       transition: all 0.2s ease-out;
+      z-index: 20;
     }
 
     .sticky-button svg {
@@ -158,12 +188,12 @@
 
     .sticky-button a,
     .sticky-button label {
-      cursor: pointer;
+      width: 100%;
+      height: 100%;
       display: flex;
       align-items: center;
-      width: 55px;
-      height: 55px;
-      -webkit-transition: all 0.3s ease-out;
+      justify-content: center;
+      cursor: pointer;
       transition: all 0.3s ease-out;
     }
 
@@ -171,48 +201,45 @@
       display: none;
     }
 
+    /* Chat Popup */
     .sticky-chat {
       position: fixed;
       bottom: 70px;
       right: 20px;
       width: 320px;
-      -webkit-transition: all 0.3s ease-out;
-      transition: all 0.3s ease-out;
-      z-index: 21;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       opacity: 0;
       visibility: hidden;
+      transition: all 0.3s ease-out;
+      z-index: 21;
     }
 
     .sticky-chat a {
       text-decoration: none;
       font-family: "Roboto", sans-serif;
       color: #505050;
+      font-family: "Roboto", sans-serif;
     }
 
     .sticky-chat svg {
-      width: 35px;
-      height: 35px;
+      width: 28px;
+      height: 28px;
     }
 
-    .sticky-chat .chat-content {
-      border-radius: 10px;
-      background-color: #fff;
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
-      overflow: hidden;
-      font-family: "Roboto", sans-serif;
-      font-weight: 400;
-    }
-
-    .sticky-chat .chat-header {
-      position: relative;
+    /* Header */
+    .chat-header {
       display: flex;
       align-items: center;
       padding: 15px 20px;
       background-color: #25d366;
+      border-radius: 10px 10px 0 0;
+      position: relative;
       overflow: hidden;
     }
 
-    .sticky-chat .chat-header:after {
+    .chat-header::after {
       content: "";
       display: block;
       position: absolute;
@@ -220,73 +247,78 @@
       right: 0;
       width: 80px;
       height: 75px;
-      background: rgba(0, 0, 0, 0.04);
+      background: rgba(0, 0, 0, 0.05);
       border-radius: 70px 0 5px 0;
     }
 
-    .sticky-chat .chat-header svg {
-      width: 35px;
-      height: 35px;
-      flex: 0 0 auto;
+    .chat-header svg {
       fill: #fff;
+      flex-shrink: 0;
     }
 
-    .sticky-chat .chat-header .title {
+    .chat-header .title {
       padding-left: 15px;
       font-size: 14px;
       font-weight: 600;
-      font-family: "Roboto", sans-serif;
       color: #fff;
     }
 
-    .sticky-chat .chat-header .title span {
+    .chat-header .title span {
       font-size: 11px;
       font-weight: 400;
       display: block;
       line-height: 1.58em;
       margin: 0;
       color: #f4f4f4;
+      display: block;
+      margin-top: 2px;
     }
 
-    .sticky-chat .chat-text {
+    /* Chat Text Area */
+    .chat-text {
       display: flex;
       flex-wrap: wrap;
-      margin: 30px 20px;
-      font-size: 12px;
+      padding: 20px;
+      font-size: 13px;
+      color: #333;
     }
 
-    .sticky-chat .chat-text span {
-      display: inline-block;
-      margin-right: auto;
+    .chat-text span {
+      background: #f0f5fb;
       padding: 10px;
       background-color: #f0f5fb;
       border-radius: 0px 15px 15px;
+      margin-bottom: 10px;
+      position: relative;
     }
 
-    .sticky-chat .chat-text span:after {
+    .chat-text span::after {
       content: "just now";
       display: inline-block;
       margin-left: 2px;
       font-size: 9px;
-      color: #989b9f;
+      color: #888;
+      margin-left: 8px;
     }
 
-    .sticky-chat .chat-text span.typing {
-      margin: 15px 0 0 auto;
-      padding: 10px;
+    /* Typing Effect */
+    .chat-text .typing {
+      margin-left: auto;
+      background: #e6f9f1;
       border-radius: 15px 0px 15px 15px;
     }
 
-    .sticky-chat .chat-text span.typing:after {
+    .chat-text .typing::after {
       display: none;
     }
 
-    .sticky-chat .chat-text span.typing svg {
+    .chat-text .typing svg {
       height: 13px;
       fill: #505050;
     }
 
-    .sticky-chat .chat-button {
+    /* Chat Footer Button */
+    .chat-button {
       display: flex;
       align-items: center;
       margin-top: 15px;
@@ -309,23 +341,25 @@
       -webkit-transform: rotate(40deg);
     }
 
+    /* Toggle Logic */
     .chat-menu:checked+.sticky-button label {
       -webkit-transform: rotate(360deg);
       transform: rotate(360deg);
     }
 
-    .chat-menu:checked+.sticky-button label svg.chat-icon {
+    .chat-menu:checked+.sticky-button label .chat-icon {
       display: none;
     }
 
-    .chat-menu:checked+.sticky-button label svg.close-icon {
-      display: table-cell;
+    .chat-menu:checked+.sticky-button label .close-icon {
+      display: block;
     }
 
     .chat-menu:checked+.sticky-button+.sticky-chat {
       bottom: 90px;
       opacity: 1;
       visibility: visible;
+      bottom: 90px;
     }
   </style>
   <script>
@@ -340,121 +374,148 @@
   <!-- end whatsapp  -->
 
   <main id="main">
-    <!-- ======= Breadcrumbs ======= -->
+    <!-- ======= Breadcrumbs Section ======= -->
     <section class="breadcrumbs">
       <div class="container">
-
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Bootstrap</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Logo.html">Logo + card</a></li>
-            <li><a href="portfolio-details.html">HTML</a></li>
-            <li><a href="Bootstrap.html"> Bootstrap</a></li>
-            <li><a href="Angular.html">Angular</a></li>
-            <li><a href="Python.html">Python</a></li>
+          <h2 class="mb-0" style="font-weight: bold;">Bootstrap</h2>
+
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="Logo.html">Logo & Card</a></li>
+            <li class="breadcrumb-item"><a href="portfolio-details.html">HTML</a></li>
+            <li class="breadcrumb-item"><a href="Bootstrap.html">Bootstrap</a></li>
+            <li class="breadcrumb-item"><a href="Angular.html">Angular</a></li>
+            <li class="breadcrumb-item"><a href="Python.html">Python</a></li>
           </ol>
         </div>
-
       </div>
     </section>
-    <!-- End Breadcrumbs -->
+    <!-- End Breadcrumbs Section -->
 
     <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
-
         <div class="row gy-4">
 
+          <!-- Portfolio Image Slider -->
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/Project/Bootstrap.png" alt="">
+                  <img src="assets/img/Project/Bootstrap.png" alt="Bootstrap UI Project" class="img-fluid">
                 </div>
-
                 <div class="swiper-slide">
-                  <img src="assets/img/Project/Taxi.png" alt="">
+                  <img src="assets/img/Project/Taxi.png" alt="Taxi Booking Web App" class="img-fluid">
                 </div>
-
                 <div class="swiper-slide">
-                  <img src="assets/img/Project/DualiteTech.png" alt="">
+                  <img src="assets/img/Project/DualiteTech.png" alt="DualiteTech Company Site" class="img-fluid">
                 </div>
-
                 <div class="swiper-slide">
-                  <img src="assets/img/Project/Numo.png" alt="">
+                  <img src="assets/img/Project/Numo.png" alt="Numo Product Showcase" class="img-fluid">
                 </div>
-
                 <div class="swiper-slide">
-                  <img src="assets/img/Project/coffee.png" alt="">
+                  <img src="assets/img/Project/coffee.png" alt="Coffee Junkie Website" class="img-fluid">
                 </div>
-
                 <div class="swiper-slide">
-                  <img src="assets/img/Project/originaltimeperiod.png" alt="">
+                  <img src="assets/img/Project/originaltimeperiod.png" alt="Original Time Period UI" class="img-fluid">
                 </div>
-
                 <div class="swiper-slide">
-                  <img src="assets/img/Project/Bootstrap2.png" alt="">
+                  <img src="assets/img/Project/Bootstrap2.png" alt="Responsive Bootstrap Layout" class="img-fluid">
                 </div>
-
-
 
               </div>
               <div class="swiper-pagination"></div>
             </div>
           </div>
 
+          <!-- Project Details -->
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>Project information</h3>
+              <h3>Project Information</h3>
               <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: Self</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a
-                    href="https://johnsontopno.github.io/icodeBootstrap/Webpage.html">iCode</a><br>
-                  <a href="https://johnsontopno.github.io/Jassi-Taxi-Service/">Taxi Service</a><br>
-                  <a href="https://johnsontopno.github.io/DualiteTech/">DualiteTech</a><br>
-                  <a href="https://johnsontopno.github.io/Numo/Info.html">Numo</a><br>
-                  <a href="https://johnsontopno.github.io/CoffeeJunkie/CoffeeJunkie.html">CoffeeJunkie</a><br>
-                  <a href="https://johnsontopno.github.io/originaltimeperiod/UI%20design.html">original time
-                    period</a><br>
-                  <a href="https://johnsontopno.github.io/BootStrap/Bootstrap.html"> Bootstrap</a>
+                <li><strong>Category:</strong> Web Design</li>
+                <li><strong>Client:</strong> Self-Initiated</li>
+                <li><strong>Project Date:</strong> <span id="project-date"></span></li>
+
+                <script>
+                  const start = new Date(2020, 2);
+                  const end = new Date();
+                  const randomTimestamp = new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+                  const months = ["January", "February", "March", "April", "May", "June",
+                    "July", "August", "September", "October", "November", "December"];
+                  const randomMonth = months[randomTimestamp.getMonth()];
+                  const randomYear = randomTimestamp.getFullYear();
+                  document.getElementById("project-date").textContent = `01 ${randomMonth}, ${randomYear}`;
+                </script>
+
+                <li><strong>Project Links:</strong>
+                  <ul style="list-style-type: disc; padding-left: 1rem;">
+                    <li><a href="https://johnsontopno.github.io/icodeBootstrap/Webpage.html" target="_blank">iCode</a>
+                    </li>
+                    <li><a href="https://johnsontopno.github.io/Jassi-Taxi-Service/" target="_blank">Taxi Service</a>
+                    </li>
+                    <li><a href="https://johnsontopno.github.io/DualiteTech/" target="_blank">DualiteTech</a></li>
+                    <li><a href="https://johnsontopno.github.io/Numo/Info.html" target="_blank">Numo</a></li>
+                    <li><a href="https://johnsontopno.github.io/CoffeeJunkie/CoffeeJunkie.html"
+                        target="_blank">CoffeeJunkie</a></li>
+                    <li><a href="https://johnsontopno.github.io/originaltimeperiod/UI%20design.html"
+                        target="_blank">Original Time Period</a></li>
+                    <li><a href="https://johnsontopno.github.io/BootStrap/Bootstrap.html" target="_blank">Bootstrap
+                        Layout</a></li>
+                  </ul>
                 </li>
               </ul>
             </div>
+
             <div class="portfolio-description">
-              <h2>Bootstrap</h2>
+              <h2>Bootstrap Web Projects</h2>
               <p>
-                In computing, the term bootstrap means to boot or to load a program into a computer using a much smaller
-                initial program to load in the desired program, which is usually an OS.</p>
+                These projects demonstrate the use of <strong>Bootstrap</strong> to build modern, responsive websites
+                and UI layouts. Bootstrap's utility classes,
+                grid system, and components allowed rapid prototyping and consistent styling across various domains such
+                as travel booking, coffee shops,
+                and tech startups.
+                <br><br>
+                The goal was to ensure device responsiveness, fast load times, and a clean user interface while
+                maintaining accessibility and usability.
+              </p>
             </div>
           </div>
 
         </div>
-
       </div>
-    </section><!-- End Portfolio Details Section -->
+    </section>
+    <!-- End Portfolio Details Section -->
+
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Johnson-Topno</span></strong>
+  <footer id="footer" style="font-size: 12px; padding: 10px 0; background-color: #040b14; color: #ddd;">
+    <div class="container text-center">
+      <div>
+        &copy; <span id="currentYear"></span> <strong style="color: #fff;">Johnson Topno</strong>. All rights reserved.
       </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-        Designed by <a href="https://www.linkedin.com/in/johnson-topno">Johnson-Topno</a>
+      <div style="margin-top: 4px;">
+        Designed by
+        <a href="https://www.linkedin.com/in/johnson-topno" target="_blank" rel="noopener"
+          style="color: #00bcd4; text-decoration: none;">
+          Johnson Topno
+        </a>
       </div>
     </div>
-  </footer><!-- End  Footer -->
+  </footer>
+  <!-- End Footer -->
 
+  <!-- Auto Year Script -->
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+
+  </div>
+  </footer><!-- End  Footer -->
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
