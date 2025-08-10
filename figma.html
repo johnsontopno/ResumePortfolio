@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Angular</title>
+  <title>Portfolio Details - Personal Bootstrap Template</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -147,6 +147,7 @@
             <circle cx="96" cy="256" r="48"></circle>
             <circle cx="256" cy="256" r="48"></circle>
             <circle cx="416" cy="256" r="48"></circle>
+            <circle cx="96" cy="256" r="48"></circle>
           </svg>
         </span>
       </div>
@@ -384,13 +385,12 @@
   <!-- end whatsapp  -->
 
   <main id="main">
-
     <!-- ======= Breadcrumbs Section ======= -->
     <section class="breadcrumbs">
       <div class="container">
+
         <div class="d-flex justify-content-between align-items-center">
-          <h2 class="mb-0" style="font-weight: bold;">Angular Js</h2>
-          
+          <h2 class="mb-0" style="font-weight: bold;">Logo & Card</h2>
           <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
             <li class="breadcrumb-item"><a href="Logo.html">Logo & Card</a></li>
@@ -401,43 +401,43 @@
             <li class="breadcrumb-item"><a href="Python.html">Flask-Python</a></li>
           </ol>
         </div>
+
       </div>
     </section>
     <!-- End Breadcrumbs Section -->
 
+
     <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
+
         <div class="row gy-4">
 
-          <!-- Image Slider -->
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide">
-                  <img src="assets/img/Project/Show.png" alt="ShowTime Angular App Screenshot" class="img-fluid">
+                <div class="swiper-slide"><img src="assets/img/Project/Figma Poster.png" alt="Figma Poster"></div>
+
+                <div class="swiper-slide"><img src="assets/img/Project/Figma Robotics Machine.png"
+                    alt="Robotics Machine"></div>
+                <div class="swiper-slide"><img src="assets/img/Project/Figma Cake.png" alt="Fishing Club Logo">
                 </div>
-                <!-- <div class="swiper-slide"> -->
-                <!-- <img src="assets/img/Project/Kitchen.png" alt="Kitchen Angular UI Design" class="img-fluid"> -->
-                <!-- </div> -->
-                <!-- Uncomment to include additional projects -->
-                <!-- <div class="swiper-slide">
-              <img src="assets/img/Project/hotel booking.png" alt="Hotel Booking UI" class="img-fluid">
-            </div> -->
+                <div class="swiper-slide"><img src="assets/img/Project/Figma Marvel.png" alt="Marvel">
+                </div>
+
               </div>
               <div class="swiper-pagination"></div>
             </div>
           </div>
 
-          <!-- Project Information -->
+
           <div class="col-lg-4">
             <div class="portfolio-info">
               <h3>Project Information</h3>
               <ul>
-                <li><strong>Category:</strong> Angular Development</li>
-                <li><strong>Client:</strong> College Projects</li>
+                <li><strong>Category:</strong> Logo Design</li>
+                <li><strong>Client:</strong> Self-Initiated</li>
                 <li><strong>Project Date:</strong> <span id="project-date"></span></li>
-
                 <script>
                   const start = new Date(2020, 2);
                   const end = new Date();
@@ -446,33 +446,36 @@
                     "January", "February", "March", "April", "May", "June",
                     "July", "August", "September", "October", "November", "December"
                   ];
-                  const randomMonth = months[randomTimestamp.getMonth()];
-                  const randomYear = randomTimestamp.getFullYear();
-                  document.getElementById("project-date").textContent = `01 ${randomMonth}, ${randomYear}`;
+                  document.getElementById("project-date").textContent = `01 ${months[randomTimestamp.getMonth()]}, ${randomTimestamp.getFullYear()}`;
                 </script>
-
                 <li><strong>Project Links:</strong>
-                  <ul style="list-style-type: disc; padding-left: 1rem;">
-                    <li><a href="https://show-time-nine.vercel.app/" target="_blank">ShowTime Angular App</a>
-                    </li>
-                    <!-- <li><a href="https://github.com/johnsontopno/KitchenWebPage.git" target="_blank">Kitchen UI
-                        Design</a></li> -->
+                  <ul style="padding-left: 1rem; list-style-type: disc;">
+                    <li><a
+                        href="https://www.figma.com/proto/lN1WqQDBUpWT1WfVAhNVim/Tour-Poster?page-id=0%3A1&node-id=1-2&p=f&viewport=25%2C51%2C0.6&t=wsmKKpg5Dn1ACXeN-1&scaling=min-zoom&content-scaling=fixed"
+                        target="_blank">Figma Poster</a></li>
+                    <li><a
+                        href="https://www.figma.com/proto/P8FNcrJMObF7mCvyULmGjy/Robotics-Machine--Community-?page-id=0%3A1&node-id=13-200&p=f&viewport=870%2C-29%2C0.18&t=sVP8LlC0PccrI0L5-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=13%3A200"
+                        target="_blank">Robotics Machine</a></li>
+                    <li><a
+                        href="https://www.figma.com/proto/C3hUCC0E5mejrc45yajFez/Cake--Community-?page-id=0%3A1&node-id=2-3&p=f&viewport=113%2C298%2C0.12&t=B7L079x0McY6ZxCM-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2%3A3"
+                        target="_blank">Cake</a></li>
+                    <li><a
+                        href="https://www.figma.com/proto/Eygxk5HbJLBUOqExr9lbGi/Untitled?page-id=0%3A1&node-id=2-2&viewport=649%2C282%2C0.42&t=s6cM7RBSjPfQrj8S-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=2%3A2"
+                        target="_blank">Marvel</a></li>
+
                   </ul>
                 </li>
               </ul>
             </div>
 
-            <!-- Project Description -->
             <div class="portfolio-description">
-              <h2>Angular Applications</h2>
+              <h2>Project Overview</h2>
               <p>
-                These Angular-based projects demonstrate component-driven development using modern front-end
-                architecture.
-                The projects leverage Angular’s reactive forms, routing, and modular structure to deliver fast,
-                responsive, and scalable web applications.
-                <br><br>
-                The codebase is structured using TypeScript and follows best practices for maintainability and
-                performance optimization.
+                I create logo designs that fuse modern aesthetics with timeless brand identity. Every design is crafted
+                to communicate a clear brand story through purposeful visual language. With bold shapes, balanced
+                typography, and a strategic color palette, my work reflects creativity, clarity, and professionalism.
+                From dynamic gaming identities to sophisticated corporate emblems, each logo is tailored with precision
+                and adaptability to resonate with its intended audience.
               </p>
             </div>
           </div>
@@ -483,7 +486,8 @@
     <!-- End Portfolio Details Section -->
 
 
-  </main><!-- End #main -->
+  </main>
+  <!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer" style="font-size: 12px; padding: 10px 0; background-color: #040b14; color: #ddd;">
